@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Haytam.</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/icons8-portfolio-64 (2).png" type="image/x-icon">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <!-- Nombre -->
+        <div class="nombre">
+            <h2>Haytam<span>.</span></h2> 
+        </div>
+
+        <!-- Barra de navegacion -->
+        <button class="button">
+            <img width="32px" src="img/menu.png" alt="">
+        </button>
+        <nav class="nav">
+            <ul class="ul">
+                <li class="li"><a href="#inicio" class="a">Inicio</a></li>
+                <li class="li"><a href="#proyectos" class="a">Actividades</a></li>
+                <li class="li"><a href="#contacto" class="a">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    
+    <section class="inicio" id="inicio">
+        <div class="contenido_inicio">
+            <h1> Hola, soy <br> Haytam El Harhari </h1>
+
+            <h3>Estudiante de Ingeniería Informática</h3>
+
+            <div class="redes">
+               
+                <a href="mailto:al426285@uji.es" class="gmail"><div class="imagen-contenedor"><img height="50px";width="50px"; src="img/gmail.png" class="imagen" alt=""></div></a>
+               
+            </div>
+        </div>
+    </section>
+    <section class="proyectos" id="proyectos">
+        <h2>Mis <span>Actividades</span></h2>
+        <div class="projects">
+            <div class="caja">
+                <h2 class="titulo_proyecto">Actividad 1</h2>
+               <h4 style="margin: 10px;"class="fecha">27/01/2025</h4>
+                <p>sssssssssssssssssssssssssssssssssssssssss
+                    sssssssssssssssssssssssssssssssssssssssssssss
+                    ssssssssssssssssssssssssssssssssssssssssssss
+               </p>
+            </div>
+        </div>
+
+
+    </section>
+    
+
+
+    <section class="contacto" id="contacto">
+        <h2>¡Contacta <span>Conmigo!</span></h2>
+        <form action="https://formsubmit.co/94c2f593714175c345164dcfd6a5807f " method="POST" class="formulario" >
+                <div class="campos">
+                    <input type="text" name="Nombre completo" required placeholder="Nombre completo">
+                </div>
+                <div class="campos">
+                    <input type="email" name="Correo electrónico" required placeholder="Correo electrónico">
+                </div>
+            
+
+            
+                <div class="campos">
+                    <input type="number" name="Número teléfono" placeholder="Número de teléfono" >
+                </div>
+                <div class="campos">
+                    <input type="text" name="Asunto" placeholder="Asunto">
+                </div>
+
+            <div class="mensaje">
+                <textarea type="text" class="mensaje" name="mensaje" id="" cols="30" rows="10" required placeholder="Tu mensaje"></textarea>
+            </div>
+
+            <div class="enviar">
+                <button type="submit" class="boton" style="text-align: center;padding-top: 4px;">Enviar</button>
+            </div>
+        </form>
+    </section>
+
+    <script>
+        function redirigir(){
+            window.location.href="curriculum/cv.pdf";
+        }
+    </script>
+
+<footer class="footer">
+    <div class="texto">
+        <p>Copyright &copy; 2025 by Haytam | All rights reserved</p>
+    </div>
+    
+</footer>
+</body>
+</html>
