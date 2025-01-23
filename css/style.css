@@ -376,3 +376,34 @@ footer{
   padding-bottom: 10px;
   font-family: Rubik;
 }
+
+
+/*sobremi*/
+.partes{
+  display: flex;
+  justify-content: space-around;
+}
+.parte1{
+  width: 50%;  
+  margin: 4px;
+}
+.parte2{
+  width: 400px;
+  height: 400px;
+  overflow: hidden; 
+  border-radius: 50%; 
+  border: 4px solid #00abf0; 
+  
+}
+
+.parte2 img{
+  width: 100%;
+  height:100%;
+  object-fit: cover; /* Asegura que la imagen se ajuste sin deformarse */
+
+}
+.parte1 p{
+  font-stretch: expanded;
+  /*background-color: #00acf017;*/
+  margin: 18px;
+}
