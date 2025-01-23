@@ -142,8 +142,8 @@ h2 {
     font-family: rubik-bold;
     font-size: 48px;
     text-align: center;
-font-weight: 700;
-  color: #00abf0;
+    font-weight: 700;
+    color: #00abf0;
 }
 
 h2 span {
@@ -315,11 +315,24 @@ p{
   max-width: 80%; 
   height: auto;
 }
-.caja p{
+.caja p,li{
   background-color: #00acf02b;
-padding: 10px;
+color: white;
+}
+.caja p{
+padding-top: 10px;
+}
+.caja li{
+  font-size: 14px;
+}
+.caja ul{
+  list-style-type: square;
 }
 
+
+.link{
+  text-decoration: underline;
+}
 
 
 
@@ -386,24 +399,27 @@ footer{
 .parte1{
   width: 50%;  
   margin: 4px;
+
 }
 .parte2{
   width: 400px;
   height: 400px;
   overflow: hidden; 
   border-radius: 50%; 
-  border: 4px solid #00abf0; 
+  border: 6px solid #00abf0; 
   
 }
 
 .parte2 img{
   width: 100%;
   height:100%;
-  object-fit: cover; /* Asegura que la imagen se ajuste sin deformarse */
+  object-fit: cover; 
+  transform: scale(2) translate(5%, 16%);/*para hacer zoom a la foto de perfil y centrarla*/
 
 }
 .parte1 p{
   font-stretch: expanded;
   /*background-color: #00acf017;*/
   margin: 18px;
+  line-height: 1.4;
 }
