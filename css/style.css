@@ -293,10 +293,10 @@ p{
 }
 
 .projects {
-  display: flex;
-    flex-direction: column; 
+    display:flex;
+    flex-direction:column; 
     gap: 20px;
-    align-items: center; 
+    align-items:center; 
 }
 
 
@@ -308,6 +308,7 @@ p{
   border-radius: 8px;
   text-align: center;
   margin-top: 10px;
+
 }
 
 .caja img {
