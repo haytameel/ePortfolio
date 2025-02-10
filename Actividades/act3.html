@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 3</title>
+    <style>
+        @font-face {
+            font-family: "Rubik";
+            src: url(../fonts/Rubik/static/Rubik-Light.ttf) format('truetype');
+        }
+
+        @font-face {
+            font-family: "Rubik-bold";
+            src: url(../fonts/Rubik/static/Rubik-Bold.ttf) format('truetype');
+        }
+
+        * {
+            margin-left: 6px;
+            scroll-behavior: smooth;
+            background-color: #081b29;
+            color: white;
+            font-family: Rubik-Bold, sans-serif;
+
+        }
+
+        h1 {
+            font-size: 70px;
+            margin: 10px;
+            font-family: Rubik-bold, sans-serif;
+            text-align: center;
+            color: #00abf0;
+        }
+
+        h3 {
+            font-size: 24px;
+            color: #00abf0;
+        }
+
+        img {
+            height: 80%;
+            width: 100%;
+        }
+
+        ol,
+        ul {
+            line-height: 1.6;
+        }
+
+        li,
+        p {
+            font-size: 18px;
+        }
+
+        p {
+            line-height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Actividad 3</h1>
+    <h3 style="text-align: left;">Reflexión sobre lo aprendido EP2</h3>
+    <p>
+
+        Durante la realización de la segunda actividad (EP2), he aprendido diversos aspectos relacionados con el campo
+        de la Documentación de los Casos de Uso. He usado la herramienta Magic para poder dibujar el Diagrama y
+        posteriromente la plantilla proporcionada en el aula virtual para poder documentar un caso de uso.
+        <br><br>
+        Tras realizar una correción he validado bastantes preguntas. Sin embargo, he cometido un par de errores que
+        tendré en cuenta. Me ha faltado numerar los casos de uso, la generalización de lso actores "Estudiante y
+        Profesor", las relaciones de dependencia "include" y "extend".
+        <br><br>
+        A pesar de estos errores, esta actividad me ha servido para reforzar mis habilidades en el modelado y
+        documentación de casos de uso, así como para comprender la importancia de cada elemento dentro de un diagrama
+        bien estructurado.
+    </p>
+
+    <h3 style="text-align: left;">Diagrama de Casos de uso ( con Ernesto Vilalta Guerrero)</h3>
+    <p>La dos nuevos casos de uso que hemos añadido son:
+        <li>Autenticar usuarios: Permite que los usuarios inicien sesión en BiblioUJI y se verifique su autorización para acceder al sistema</li>
+        <li>Registrar ubicaciones: Registrar ubicaciones: Permite al personal bibliotecario ingresar y actualizar las ubicaciones físicas de los libros dentro del sistema.</li> 
+
+        <br> <br>
+        <img style="width: 80%;" src="../img/ep3_diagrama_casos_de_uso.jpg" alt="diagrama">
+    </p>
+
+    <br>
+
+    <h3>Lista de Verificación</h3>
+    
+    <ol>
+        <li>¿Se ha definido correctamente un actor generalizado para "Estudiante" y "Profesor"?</li>
+        <li>
+            ¿Existe algún caso de uso que no esté asociado a ningún actor?
+        </li>
+        <li>
+            ¿Los casos de uso más pequeños han sido agrupados en un caso de uso más general?
+        </li>
+        <li>
+            ¿Todos los actores están correctamente ubicados fuera del sistema?
+        </li>
+        <li>
+            ¿Se han utilizado correctamente las relaciones de "include" y "extend" donde sea necesario?
+        </li>
+    </ol>
+
+
+    <br>
+
+    <h3>Lista de Validación</h3>
+    <P>Caso de uso a validar: Consultar Catálogo (CU01)</P>
+    
+    <ol>
+        <li>¿Se ha proporcionado un identificador único para el caso de uso?</li>
+        <li>
+            ¿Las precondiciones establecen correctamente que el usuario debe estar autenticado antes de realizar la consulta?
+        </li>
+        <li>
+            ¿Se describe detalladamente la funcionalidad del caso de uso?
+        </li>
+        <li>
+            ¿La secuencia normal del caso de uso sigue un flujo lógico y detallado, cubriendo todas las acciones del usuario y respuestas del sistema?
+        </li>
+        <li>
+            ¿Las condiciones de finalización (éxito y fracaso) contemplan todos los posibles escenarios, incluyendo fallos en la conexión y catálogo vacío?
+        </li>
+    </ol>
+
+</body>
+
+</html>
