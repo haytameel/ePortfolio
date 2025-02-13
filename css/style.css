@@ -294,21 +294,17 @@ p{
 
 .projects {
     display:flex;
-    flex-direction:column; 
+    flex-direction:row; 
+    flex-wrap: wrap;
     gap: 10px;
-    align-items:center; 
+    justify-content: center;
 }
 
 
 .projects .caja {
-  width: 80%; 
-  max-width: 1000px; 
   padding: 20px;
   border: 4px solid #00BFFF;
   border-radius: 8px;
-  text-align: center;
-  margin-top: 10px;
-
 }
 
 .caja img {
@@ -317,7 +313,7 @@ p{
   height: auto;
 }
 .caja p,li{
-  background-color: #00acf02b;
+background-color: #00acf02b;
 color: white;
 }
 .caja p{

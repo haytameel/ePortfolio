@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 4</title>
+    <link rel="stylesheet" href="../css/actividades.css">
+    <style>
+       
+    </style>
+</head>
+
+<body>
+    <h1>Actividad 4</h1>
+    <h3 style="text-align: left;">Reflexión sobre lo aprendido EP3</h3>
+    <p>
+
+        Durante la realización de la segunda actividad (EP2), he aprendido diversos aspectos relacionados con el campo
+        de la Documentación de los Casos de Uso. He usado la herramienta Magic para poder dibujar el Diagrama y
+        posteriromente la plantilla proporcionada en el aula virtual para poder documentar un caso de uso.
+        <br><br>
+        Tras realizar una correción he validado bastantes preguntas. Sin embargo, he cometido un par de errores que
+        tendré en cuenta. Me ha faltado numerar los casos de uso, la generalización de los actores "Estudiante y
+        Profesor", las relaciones de dependencia "include" y "extend".
+        <br><br>
+        A pesar de estos errores, esta actividad me ha servido para reforzar mis habilidades en el modelado y
+        documentación de casos de uso, la generalización de actores, el uso de las relaciones de dependencia cuando corresponda, así como para comprender la importancia de cada elemento dentro de un diagrama
+        bien estructurado.
+    </p>
+
+    <h3 style="text-align: left;">2 Historias de Usuario junto a 3 escenarios cada una
+        (con Ernesto Vilalta Guerrero)</h3>
+
+        HISTORIAS DE USUARIOS (DOS)
+        1.-E01-Como estudiante quiero reservar un libro para poder utilizarlo en clase.
+        2.-E02-Como personal bibliotecario quiero registrar un ejemplar para que esté disponible en la aplicación
+        
+        ESCENARIOS (3 DE CADA UNO)
+        1.-
+        
+        HU01-E01 Válido 
+        Given: BBDD contiene una entrada {nombre:”Pepe”, tipoUsuario="estudiante", numLibrosReservadosActuales:0, email=”al426299@uji.es”}  
+        When: Realiza la reserva de un libro
+        Then: Se le acepta la solicitud de reserva
+        
+        HU01-E02 Inválido 
+        Given: BBDD contiene una entrada {nombre:”Pepe”, tipoUsuario="estudiante", numLibrosReservadosActuales:6, email=”al426299@uji.es”}  
+        When: Intenta realizar la reserva de un libro
+        Then: Se le deniega la solicitud de reserva ya que supera el número máximo de libros en préstamo
+        
+        HU01-E03 Inválido 
+        Given: BBDD contiene una entrada {nombre:”Pepe”, tipoUsuario="estudiante", numLibrosReservadosActuales:0, email=”al426299@uji.es”} y {titulo="Don Quijote de la Mancha", ISBN="1267128721", estado="reservado"}
+        When: Intenta realizar la reserva de un libro
+        Then: Se le deniega la solicitud de reserva ya que el libro está reservado
+        
+        -----------------------------------------------------------------------------------
+        2.-
+        
+        HU02-E01 Válido 
+        Given: BBDD contiene una entrada {nombre:”Jose”, tipoUsuario="personal" email="josefer@uji.es”}  
+        When: Realiza el registro del libro "Don Quijote de la Mancha" en la aplicación
+        Then: Se le acepta la solicitud de registro
+        
+        HU02-E02 Inválido 
+        Given: BBDD contiene una entrada {nombre:”Jose”, tipoUsuario="personal" email="josefer@uji.es”}   
+        When: Intenta registrar el libro "Don Quijote de la Mancha" 
+        Then: Se le deniega la solicitud de registro ya que no ha proporcionado ISBN...
+        
+        HU02-E03 Inválido 
+        Given: BBDD contiene una entrada {nombre:”Jose”, tipoUsuario="personal" email="josefer@uji.es”}
+        When: Intenta registrar el libro "Don Quijote de la Mancha" sin haber iniciado sesion
+        Then: Se le deniega la solicitud de reserva ya que no ha sido autenticado previamente
+        
+        
+    <br>
+
+    <h3>Wireframe</h3>
+    
+    <br>
+
+    <h3>Diagrama de Clases
+    </h3>    
+
+</body>
+
+</html>
