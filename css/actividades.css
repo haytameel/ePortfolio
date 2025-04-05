@@ -48,3 +48,9 @@ p {
 p {
     line-height: 20px;
 }
+
+.reflexion {
+    width: 80%;
+    align-items: center;
+    margin: auto;
+}

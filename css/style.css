@@ -73,7 +73,6 @@ header{
   flex-flow: row nowrap;
   justify-content: flex-end;
   align-items: center;
-  
 }
 .header .li{
   margin: 0 .5em;
